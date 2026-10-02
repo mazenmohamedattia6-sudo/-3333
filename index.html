@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دكان مازن 🎁</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="neb neb-1"></div>
+<div class="neb neb-2"></div>
+<div class="page">
+  <div class="shop-sign">
+    <div class="sign-lights">
+      <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+      <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+      <span class="bulb"></span><span class="bulb"></span>
+    </div>
+    <div class="sign-body">
+      <span class="sign-eyebrow">متجر مازن للهدايا</span>
+      <h1 class="sign-title">Mazen's Gift Shop 🎁</h1>
+      <p class="sign-sub">كل هدية فيها رسالة من القلب يا ملك</p>
+    </div>
+  </div>
+
+  <div class="shelf-wrap">
+    <div class="shelf-label">✦ هدايا الحب</div>
+    <div class="shelf">
+      <div class="gift-box" data-idx="0"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#c96b8a"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">وردة 🌹</span></div>
+      <div class="gift-box" data-idx="1"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#4a6eb0"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">رسالة 💌</span></div>
+      <div class="gift-box" data-idx="2"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#8a4ab0"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">حضن 🤍</span></div>
+    </div>
+  </div>
+
+  <div class="shelf-wrap">
+    <div class="shelf-label">✦ هدايا المستقبل</div>
+    <div class="shelf">
+      <div class="gift-box" data-idx="3"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#b04a4a"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">بيتنا 🏠</span></div>
+      <div class="gift-box" data-idx="4"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#2a7a4a"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">سفرة ✈️</span></div>
+      <div class="gift-box" data-idx="5"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#c9a84c"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">ليلى ويزن 👶</span></div>
+    </div>
+  </div>
+
+  <div class="shelf-wrap">
+    <div class="shelf-label">✦ هدايا اللحظة</div>
+    <div class="shelf">
+      <div class="gift-box" data-idx="6"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#8a5a2a"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">هوتشكليت ☕</span></div>
+      <div class="gift-box" data-idx="7"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#2a4a8a"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">ليلة 🌙</span></div>
+      <div class="gift-box" data-idx="8"><div class="gift-lid"><div class="gift-bow">🎀</div></div><div class="gift-body" style="--clr:#6a4ab0"><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div></div><span class="gift-tag">ضحكتك 😊</span></div>
+    </div>
+  </div>
+
+  <div class="counter-bar">🛍️ فتحتِ <span id="opened-count">0</span> من 9 هدايا</div>
+
+  <div class="unwrap-overlay" id="unwrap-overlay" hidden>
+    <div class="unwrap-box">
+      <div class="gift-shine"></div>
+      <div class="unwrap-icon" id="unwrap-icon"></div>
+      <h2 class="unwrap-title" id="unwrap-title"></h2>
+      <p class="unwrap-msg" id="unwrap-msg"></p>
+      <p class="unwrap-sign">— مازن 💗</p>
+      <button class="unwrap-close" id="unwrap-close">✕ أغلقي</button>
+    </div>
+  </div>
+
+  <p class="footer">متجر مازن — كل حاجة فيه مجانية ليكِ 💗</p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
